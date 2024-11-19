@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e5e5e5;
+        }
+        .login-container {
+            background-color: #f7f7f7;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            outline: none;
+        }
+        .login-container .options {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .login-container a.button-link {
+            display: inline-block;
+            width: 100%;
+            padding: 12px;
+            border-radius: 25px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .login-container a.button-link:hover {
+            background-color: #333;
+        }
+        .login-container .signup-link {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .login-container .signup-link a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <div class="options">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password</a>
+        </div>
+        <a href="own.html" class="button-link">Sign In</a>
+        <div class="signup-link">
+            Don't have an account? <a href="#">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>

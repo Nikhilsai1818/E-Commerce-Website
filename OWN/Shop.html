@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Shopbro</title>
+    <style>
+        #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: rgb(0, 119, 223);
+}
+
+#navbar li a.active {
+    color: rgb(0, 119, 223);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(0, 119, 223);
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .brand {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .product-title {
+            color: #333;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .rating {
+            color: #ffc107;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            color: #1e90ff;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .cart-icon {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: #9b59b6;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="Shopbro_logo_resized.png"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="own.html">Home</a></li>
+                <li><a class="active" href="Shop.html">Shop</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <div class="container">
+        <h1>Shop Products</h1>
+        
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://m.media-amazon.com/images/I/71xFKDqlbKL._AC_UY1000_.jpg" alt="Product 1" class="product-image">
+                <div class="brand">Wrogn</div>
+                <div class="product-title">Summer Shirts</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">$18</div>
+                <div class="cart-icon">🛒</div>
+            </div>
+
+            <div class="product-item">
+                <img src="https://images-cdn.ubuy.co.in/66860cc5b5fd042393618a6d-mens-t-shirts-men-s-summer-fashion.jpg" alt="Product 2" class="product-image">
+                <div class="brand">Wrogn</div>
+                <div class="product-title">Summer Shirts</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">$18</div>
+                <div class="cart-icon">🛒</div>
+            </div>
+
+            <div class="product-item">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240910/GEem/66e01fa76f60443f3168a8b5/-473Wx593H-700349894-brown-MODEL.jpg" alt="Product 3" class="product-image">
+                <div class="brand">Wrogn</div>
+                <div class="product-title">Summer Shirts</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">$18</div>
+                <div class="cart-icon">🛒</div>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240914/Tbgy/66e497251d763220fae6ce47/-473Wx593H-700421388-white-MODEL.jpg" alt="Product 3" class="product-image">
+                <div class="brand">Wrogn</div>
+                <div class="product-title">Summer Shirts</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">$18</div>
+                <div class="cart-icon">🛒</div>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240909/rbuj/66decddf1d763220fad24e72/-473Wx593H-700349958-brown-MODEL.jpg" alt="Product 3" class="product-image">
+                <div class="brand">Wrogn</div>
+                <div class="product-title">Summer Shirts</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">$18</div>
+                <div class="cart-icon">🛒</div>
+            </div>
+            <div class="product-item">
+                <img src="https://dynamic.zacdn.com/zxahtc8HeNHzgScud6s8QOhNiGk=/filters:quality(70):format(webp)/https://static-sg.zacdn.com/p/hm-9788-7129453-1.jpg" alt="Product 3" class="product-image">
+                <div class="brand">Wrogn</div>
+                <div class="product-title">Summer Shirts</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">$18</div>
+                <div class="cart-icon">🛒</div>
+            </div>
+            <div class="product-item">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240917/Q1TK/66e8af9e6f60443f3181de17/-473Wx593H-700431077-blue-MODEL.jpg" alt="Product 3" class="product-image">
+                <div class="brand">Wrogn</div>
+                <div class="product-title">Summer Shirts</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">$18</div>
+                <div class="cart-icon">🛒</div>
+            </div>
+
+            <div class="product-item">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shirt/y/l/z/l-sugarcanearoon-molimen-original-imaguxemvzt8t4zg.jpeg?q=20&crop=false" alt="Product 4" class="product-image">
+                <div class="brand">Wrogn</div>
+                <div class="product-title">Summer Pants</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <div class="price">$18</div>
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

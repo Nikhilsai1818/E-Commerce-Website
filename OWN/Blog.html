@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Shopbro</title>
+    <style>
+        #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: rgb(0, 119, 223);
+}
+
+#navbar li a.active {
+    color: rgb(0, 119, 223);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(0, 119, 223);
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .blog-post {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post h2 {
+            color: #1e90ff;
+            margin: 0;
+        }
+
+        .blog-post p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .blog-post .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .blog-post .read-more:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="Shopbro_logo_resized.png"></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="own.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a class="active" href="Blog.html">Blog</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <div class="container">
+        <h1>Shopbro Blog</h1>
+        
+        <div class="blog-post">
+            <h2>Top 5 Trends in E-commerce for 2024</h2>
+            <p>Discover the latest trends in e-commerce that are shaping the industry in 2024. From AI-driven personalization to eco-friendly packaging, find out what’s making waves this year...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>How to Choose the Right Products for Your Needs</h2>
+            <p>Choosing the right product can be overwhelming with so many options available. Our guide helps you make the best choice based on quality, budget, and personal preferences...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>Why Customer Experience Matters in Online Shopping</h2>
+            <p>Great customer experience can turn a one-time visitor into a loyal customer. Learn about the strategies used by top e-commerce platforms to enhance user satisfaction...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="footer">
+            © 2024 Shopbro - All rights reserved
+        </div>
+    </div>
+
+</body>
+</html>

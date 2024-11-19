@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shopbro</title>
+    <style>
+        #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: rgb(0, 119, 223);
+}
+
+#navbar li a.active {
+    color: rgb(0, 119, 223);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(0, 119, 223);
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            margin: 10px 0;
+        }
+
+        .contact-item span {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .contact-item a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="Shopbro_logo_resized.png"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="own.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a class="active" href="Contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>Email:</span> <a href="mailto:broshop18@gmail.com">broshop18@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <span>Phone:</span> <a href="tel:+1234567890">+1 234-567-890</a>
+            </div>
+            <div class="contact-item">
+                <span>Address:</span> 123 Shopbro Lane, Commerce City, CA 12345
+            </div>
+            <div class="contact-item">
+                <span>Support Hours:</span> Monday - Friday, 9:00 AM - 5:00 PM
+            </div>
+        </div>
+        <div class="footer">
+            © 2024 Shopbro - All rights reserved
+        </div>
+    </div>
+
+</body>
+</html>
